@@ -1,0 +1,29 @@
+.sidebar {
+  position: absolute;
+  width: 318px;
+  height: 500px;
+  left: 100px;
+  top: 48px;
+
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.sidebar h1 {
+  position: absolute;
+  width: 127px;
+  height: 18px;
+  left: 24px;
+  top: 24px;
+
+  font-style: bold;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  margin: 0 auto;
+  color: #000000;
+}

@@ -1,5 +1,5 @@
 .sidebar {
-  position: absolute;
+  position: relative;
   width: 318px;
   height: 500px;
   left: 100px;
@@ -9,21 +9,29 @@
   border-radius: 2px;
 }
 
-.sidebar h1 {
+.header {
   position: absolute;
-  width: 127px;
-  height: 18px;
   left: 24px;
-  top: 24px;
+  top: 25px;
 
   font-style: bold;
-  font-weight: 400;
+  font-weight: 475;
   font-size: 18px;
   line-height: 100%;
-
-  display: flex;
-  align-items: center;
+  letter-spacing: -0.09px;
 
   margin: 0 auto;
   color: #000000;
+}
+
+.itemBox {
+  position: relative;
+  width: 318px;
+  height: 442px;
+  top: 58px;
+  left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }

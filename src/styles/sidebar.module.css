@@ -1,31 +1,30 @@
 .sidebar {
-  position: relative;
+  position: fixed;
   width: 318px;
   height: 500px;
-  left: 100px;
-  top: 48px;
-
+  margin: 48px 1022px 0 100px;
   background-color: #ffffff;
   border-radius: 2px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   position: absolute;
   left: 24px;
-  top: 25px;
+  top: 24px;
 
-  font-style: bold;
-  font-weight: 475;
+  font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: -0.09px;
 
   margin: 0 auto;
   color: #000000;
 }
 
 .itemBox {
-  position: relative;
+  position: absolute;
   width: 318px;
   height: 442px;
   top: 58px;

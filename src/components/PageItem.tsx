@@ -11,24 +11,12 @@ export const PageItem = (props: {
   var beg = ""
   var end = ""
   var color = ""
-  if (props.wordId == 1) {
-    color = splitted[0] + " "
-    for (let i = 1; i < splitted.length; i++) {
-      end += splitted[i] + " "
-    }
-  } else if (props.wordId == splitted.length) {
-    for (let i = 0; i < splitted.length - 1; i++) {
-      beg += splitted[i] + " "
-    }
-    color = splitted[splitted.length - 1]
-  } else {
-    for (let i = 0; i < props.wordId - 1; i++) {
-      beg += splitted[i] + " "
-    }
-    color += splitted[props.wordId - 1]
-    for (let i = props.wordId; i < splitted.length; i++) {
-      end += splitted[i] + " "
-    }
+  for (let i = 0; i < props.wordId - 1; i++) {
+    beg += splitted[i] + " "
+  }
+  color += splitted[props.wordId - 1] + " "
+  for (let i = props.wordId; i < splitted.length; i++) {
+    end += splitted[i] + " "
   }
   return (
     <div className={styles.pageItem}>

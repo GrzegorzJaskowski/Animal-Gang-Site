@@ -1,7 +1,7 @@
 .pageItem {
   position: relative;
-  top: 48px;
-  left: 523px;
+  /* top: 48px;
+  left: 523px; */
   display: flex;
   flex-direction: column;
 }

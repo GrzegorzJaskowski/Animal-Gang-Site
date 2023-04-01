@@ -18,8 +18,9 @@ export const PageItem = (props: {
   for (let i = props.wordId; i < splitted.length; i++) {
     end += splitted[i] + " "
   }
+  var id = props.title.toLowerCase()
   return (
-    <div className={styles.pageItem}>
+    <div id={id} className={styles.pageItem}>
       <p className={styles.title}>{props.title}</p>
       <p className={styles.text}>
         {beg}

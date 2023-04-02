@@ -1,6 +1,6 @@
 import styles from "../styles/sidebarItem.module.css"
 
-export const SidebarItem = (props: { text: string }) => {
+export const SidebarItem = (props: { text: string; active: string }) => {
   function handleClick() {
     document
       .getElementById(props.text.toLowerCase())
@@ -8,8 +8,21 @@ export const SidebarItem = (props: { text: string }) => {
   }
 
   return (
-    <div onClick={handleClick} className={styles.sidebarItem}>
-      <p className={styles.header}>{props.text}</p>
+    <div
+      onClick={handleClick}
+      className={
+        props.active === props.text
+          ? styles.sidebarItemActive
+          : styles.sidebarItem
+      }
+    >
+      <p
+        className={
+          props.active === props.text ? styles.headerActive : styles.header
+        }
+      >
+        {props.text}
+      </p>
     </div>
   )
 }
